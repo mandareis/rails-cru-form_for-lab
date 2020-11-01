@@ -11,22 +11,21 @@
 
 You've been tasked with building a Rails app called **Beats by Rails**, the app will need to have three separate models:
 
-* Songs
+- Songs
 
-* Artists
+- Artists
 
-* Genres
+- Genres
 
 The data relationship will look something like this:
 
-* A song belongs to an artist
+- A song belongs to an artist
 
-* A song belongs to a genre
+- A song belongs to a genre
 
-* A genre has many songs
+- A genre has many songs
 
-* An artist has many songs
-
+- An artist has many songs
 
 The tests are in the `spec/features` directory for each model. You will need to build in the ability to `create`, `update`, and `show` for each model. And for the song `show` page you need to have it display each of the song's genre and artist, and link to the respective genre and artist `show` pages.
 
@@ -48,10 +47,9 @@ table "songs"
 
 ## Key notes to remember
 
-* You will need to use [strong params](https://github.com/learn-co-curriculum/strong-params-basics)
+- You will need to use [strong params](https://github.com/learn-co-curriculum/strong-params-basics)
 
-* Don't worry about integrating drop down form elements for the genre and artist selections on the song form pages yet, simply enter in the ID in for each element
+- Don't worry about integrating drop down form elements for the genre and artist selections on the song form pages yet, simply enter in the ID in for each element
 
-* You can use the `resource`, `model`, `migration`, and `controller` generators, but do not use the `scaffold` generator
-*Top Tip: Remember to use the --no-test-framework flag when generating models and controllers to avoid generating unnecessary testing frameworks!*
-
+- You can use the `resource`, `model`, `migration`, and `controller` generators, but do not use the `scaffold` generator
+  _Top Tip: Remember to use the --no-test-framework flag when generating models and controllers to avoid generating unnecessary testing frameworks!_
